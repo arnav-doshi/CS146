@@ -25,6 +25,16 @@ def inOrder(root):
 
 
 
+# root = TreeNode(4)
+# root.left = TreeNode(4)
+# root.left.left = TreeNode(4)
+# root.left.left.left = TreeNode(3)
+# root.left.left.left.left = TreeNode(1)
+
+# root.right = TreeNode(8)
+# root.right.left = TreeNode(5)
+# root.right.right = TreeNode(9)
+
 root = TreeNode(3)
 root.left = TreeNode(2)
 root.right = TreeNode(4)
