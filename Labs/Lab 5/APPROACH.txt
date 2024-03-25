@@ -1,0 +1,28 @@
+Lab 5 Approach:
+
+Traverse the BST InOrder, then save values into an ArrayList. If ArrayList is in ascending order, then print true. Otherwise print false. 
+
+Pseudocode:
+
+
+ArrayList val = new ArrayList
+
+
+inorder(Node node) {
+if node == null:
+	return val;
+
+	inorder(node.left)
+	val.add(node.value)
+	inorder(node.right)
+}
+
+
+
+BST Traverse: 
+for (int i = 1; i < val.size(); i++) {
+	if (val.get(i-1) > val)
+	return false
+
+}
+return true
