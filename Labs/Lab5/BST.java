@@ -7,7 +7,7 @@ public class BST {
         inOrder = inOrder(root);
 
         for (int i  = 1; i < inOrder.size(); i++) {
-            if (inOrder.get(i-1) > inOrder.get(i)) {
+            if (inOrder.get(i-1) > inOrder.get(i)) { // MAKE IT LESS THAN OR EQUAL TO FOR DUPES
                 return false;
             }
         }

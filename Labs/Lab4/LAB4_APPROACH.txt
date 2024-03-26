@@ -1,0 +1,14 @@
+Recursively go down a level in the tree
+
+If root is not null:
+Use a temp value to store the left value of the node
+
+Flip the left and the right children of the current node (node above) (use pointers)
+
+return the root
+
+If root is null, return null
+
+
+Repeat until down the entire left
+Repeat until down the entire right
