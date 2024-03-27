@@ -21,7 +21,7 @@ def levelOrder(root):
             level.append(curr.val)
             
             if curr.left:
-                queue.append(curr.left)
+                queue.append(curr.left) #.append in python?
             if curr.right:
                 queue.append(curr.right)
         

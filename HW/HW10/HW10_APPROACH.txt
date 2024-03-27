@@ -1,0 +1,16 @@
+HW 10 Approach
+
+Perform a BFS (Breadth First Search)
+
+Basic Idea: Visit each node, one level at a time
+Use a queue to keep track of one level over the next
+
+
+Step 1: Visit the starting node. Mark it as visited
+
+Step 2: Discover all the neighbors of this node, and add them to the queue to visit them next
+
+Step 3: While the queue is not empty, dequeue the next element, record its value into the final list, and repeat step 2.
+
+
+Repeat thisuntil all nodes in the tree are visited.
