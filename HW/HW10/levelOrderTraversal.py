@@ -29,11 +29,11 @@ def levelOrder(root):
     
     return finalList
 
-root = TreeNode(4)
-root.left = TreeNode(3)
-root.right = TreeNode(8)
-root.right.right = TreeNode(9)
-root.right.left = TreeNode(5)
-root.left.left = TreeNode(1)
+# root = TreeNode(4)
+# root.left = TreeNode(3)
+# root.right = TreeNode(8)
+# root.right.right = TreeNode(9)
+# root.right.left = TreeNode(5)
+# root.left.left = TreeNode(1)
 
-print(levelOrder(root))
+# print(levelOrder(root))
