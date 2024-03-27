@@ -1,0 +1,9 @@
+HW 9 Approach
+
+Traverse down the BST looking for node p, saving all of the nodes passed into an ArrayList. 
+
+Traverse down the same BST looking for node q, saving all of the nodes into another ArrayList.
+
+Compare the two ArrayLists, finding the last common value (closest common value to the end of the list)
+
+Return that common value.

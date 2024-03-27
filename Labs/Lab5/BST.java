@@ -7,7 +7,7 @@ public class BST {
         inOrder = inOrder(root);
 
         for (int i  = 1; i < inOrder.size(); i++) {
-            if (inOrder.get(i-1) > inOrder.get(i)) { // MAKE IT LESS THAN OR EQUAL TO FOR DUPES
+            if (inOrder.get(i-1) >= inOrder.get(i)) { // MAKE IT GREATER THAN TO MAKE DUPLICATE VALUES RETURN TRUE
                 return false;
             }
         }
@@ -28,23 +28,31 @@ public class BST {
     }
 
     public static void main(String[] args) {
-        TreeNode root;
+        // TreeNode root;        
+
         // root = new TreeNode(4);
-        // root.left = new TreeNode(4);
-        // root.left.left = new TreeNode(4);
-        // root.left.left.left = new TreeNode(3);
-        // root.left.left.left.left = new TreeNode(1);
-
+        // root.left = new TreeNode(3);
         // root.right = new TreeNode(8);
-        // root.right.left = new TreeNode(5);
+        // root.left.left = new TreeNode(1);
         // root.right.right = new TreeNode(9);
-        
-        root = new TreeNode(3);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(4);
-        root.left.left = new TreeNode(1);
-        root.right.right = new TreeNode(5);
+        // root.right.left = new TreeNode(5);
 
-        System.out.println(isValidBST(root));
+        // root = new TreeNode(1);
+        // root.left = new TreeNode(2);
+        // root.right = new TreeNode(8);
+        // root.left.left = new TreeNode(3);
+        // root.left.right = new TreeNode(4);
+        // root.right.right = new TreeNode(6);
+        // root.right.left = new TreeNode(5);
+
+        // root = new TreeNode(6);
+        // root.left = new TreeNode(-13);
+        // root.left.right = new TreeNode(-8);
+        // root.right = new TreeNode(14);
+        // root.right.right = new TreeNode(15);
+        // root.right.left = new TreeNode(13);
+        // root.right.left.left = new TreeNode(7);
+
+        // System.out.println(isValidBST(root));
     }
 }
