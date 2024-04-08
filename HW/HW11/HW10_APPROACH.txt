@@ -1,0 +1,5 @@
+HW 11 Approach
+
+This is my recursive solution to the problem. It first has a guard case to check if the given 2D array is empty, if not, then it calls a helper recursive method.
+
+In this helper method, it checks some terminating cases, such as if the row/col is outside of the width/height, or if the pixel is already equal to the new color, or if it is not equal to the original color. Once these cases pass, then the pixel value is saved and passed into the four directions up down left and right, until the method ultimately terminates and the new 2D array is returned. 
