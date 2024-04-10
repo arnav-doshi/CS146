@@ -1,0 +1,44 @@
+Arnav Doshi - Extra Credit "Everything Everywhere All At Once" Approach
+
+
+
+
+Adjacency List to Matrix:
+My approach here would be to create a 2D matrix for the size n x n, n = num of vertices in graph. Set all these equal to 0.
+
+Then I would make sure to list all the nodes in the map as an index in the matrix. For example, A = index 0, B = index 1, etc. 
+
+From there, I would just iterate through the adjacency list for each node, I would have a variable to keep track of the rowindex (the index of the current Node). 
+
+Then for each node that's next in the adjacency list, I would iterate through its next nodes and set each one to a columnIndex. 
+
+Once a columnIndex is established, I would just set the row and column of the adjacency matrix to 1/True.
+
+This continues until the adjacency list ends. 
+
+
+
+
+
+Adjacency Matrix to List:
+My approach here would be to create a List of lists that is initially empty.
+
+Then for each node/vertex in the adjacencyList I would initialize another empty list named "neighbors".
+
+Then for each column in the adjacency matrix, you check if it's equal to 0 or not. If it is not, then append the index of the column to the "neighbors" list. 
+
+Then set the adjacencyList(list) equal to neighbors and continue.
+
+This continues until the AdjacencyMatrix is empty.
+
+
+
+
+Reverse direction of each edge:
+My approach here would be to create another empty graph.
+
+Then for each edge in the graph, I would remove the edge from the current graph (v, u), check if it's contained in the reversed graph. If not, then I would add the edge into the reversedgraph (u, v). If it is contained, then I would skip it. 
+
+Repeat this until the original graph is empty
+
+
