@@ -1,0 +1,18 @@
+BFS:
+The queue is initialized with a starting node, and an empty stack (created to store the sorted nodes)
+A node is taken out of the queue, and if it's not already in the stack, then it is added to the stack. Then it's next node (neighbor) is added into the queue if it hasn't been visit before. This process is repeat for all the nodes until the queue is empty. 
+
+When all the nodes area processed the stack is returned with all the sorted elements. 
+
+In this case, the queue starts with [1], and the stack starts empty.
+
+Afterwards, [2] and [3] are placed into the queue and the stack is filled with [1].
+
+Next, since 2 is dequeued, [4] and [5] are placed into the queue, and 2 is paced into the stack. 
+
+Next 3 is dequeued and placed into the stack. The queue is now [4,5,6] and the queue is [1,2,3]
+
+This process repeats until we get [1,2,3,4,5,6,7] all in the stack.
+
+
+DFS:
