@@ -16,3 +16,50 @@ This process repeats until we get [1,2,3,4,5,6,7] all in the stack.
 
 
 DFS:
+This approach revolves initializing an empty stack to store the nodes and initializing a hashmap to keep track of all the already visited nodes in the graph.
+
+First, you iterate through the nodes in the graph and mark them as unvisited in the dictionary.
+
+Then you iterate through the nodes in the graph, for each unvisited node, you pass the node into the stack and the dictionary to mark as visited. This recursively calls the DFS method and keeps exploring the graph with its surrounding nodes.
+
+Once all the nodes are visited, the stack is popped in reverse order in order to get the topological sort. 
+
+In this case, the node "1" is marked as visited, and since 2 and 3 are adjacent to 1, DFS is performed on 2 and 3. 
+Next, 2 is marked as visited and since 4 and 5 are adjacent to 2, DFS is performed on 4 and 5.
+
+This pattern continues until the stack is in reverse sorted order with all the vertices from the graph.
+
+Then the stack is popped in reverse order and we get [1,2,3,4,5,6,7] in sorted order.
+
+
+Kahn's:
+This approach revolves a hashmap/dictionary named 'inDegree' which keeps tracks of the indegrees of each node (The number of incoming edges for a node). All nodes are initialized to 0 indegree at the beginning.
+
+Then, we iterate through every node in the graph and iterate through its adjacent nodes. We increment the indegree for each adjacent node that we find.
+
+Next, we create a queue to start storing the nodes with an indegree of 0.
+We start off with iterating through the nodes again and adding any that have an indegree of 0 to the queue. 
+
+Then, while the queue is not empty, we dequeue a node from the front of the queue, add it to another list, and decrement the adjacent nodes' indegree by 1. If the indegree of any adjacent node becomes 0, we add it to the queue.
+
+This process continually repeats while the original queue is not empty.
+
+In this case, all nodes begin with an indegree of 0. 
+Then, for node 1, '2' and '3' are adjacent, so I increment their indegrees by 1.
+For node 2, '4' and '5' are adjacent, so I increment their indegrees by 1.
+This process continues until node 7 and after all calculations the indegree hashmap looks like this:
+'1': 0
+'2': 1
+'3': 1
+'4': 1
+'5': 2
+'6': 1
+'7': 2
+
+Then we add the nodes with indegree 0 to the queue, meaning 1 is added.
+Then we add it to the final result list, and dequeue it. Since 2 and 3 are adjacent to 1, their indegrees are decremented first. Their indegrees are now 0.
+Since their indegrees are 0, they are added into the queue.
+2 is then added into the final result list.
+since '4' and '5' are adjacent to 2, their indegrees are decremented and they are added into the queue.
+
+This process continues until the final sorted order is [1,2,3,4,5,6,7] in sorted order.
