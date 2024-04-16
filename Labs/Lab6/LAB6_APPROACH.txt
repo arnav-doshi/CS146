@@ -1,0 +1,17 @@
+Lab 6
+
+This approach works by using Kahn's algorithm to repeatedly add nodes into a queue based on in degree to detect cycles or not.
+
+First we create a HashMap which links each course and its inDegree. We also have a queue to store courses with an indegree of 0.
+
+Then we calculate indegrees of every node in prerequisites. 
+
+Then we iterate through the range of numCourses and add all codes with an in degree 0 to the queue. 
+
+Then we start with the courses with an indegree 0, and pop courses from the queue, incrementing the coursesDone variable every item we remove. 
+
+Once we remove a course from the queue, we decrement the in degree of the close courses. 
+
+Repeat this process until all nodes are in the queue.
+
+At the end, we compare the number of courses given to the courses able to be completed (courses able to be completed with an indegree of 0). If these numbers are the same, we return true, otherwise return false.
