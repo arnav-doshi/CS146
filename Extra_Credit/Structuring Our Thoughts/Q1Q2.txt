@@ -1,0 +1,3 @@
+1. Other than speed, we can measure algorithms in space efficiency (making sure it uses the least amount of memory possible), simplicity or clarity, maintainability, and modularity.
+
+2. A data structure that I have seen is a linked list. Its strengths include a quick insertion and deletion time, with its time complexity being O(1) for these operations. You can also implement these as singular, doubly, or circular linked lists. Its limitations include an O(N) searching time, due to the mandatory traversal of the nodes, and more complexity compared to a structure such as an array.
