@@ -1,0 +1,13 @@
+Lab 2 Approach
+
+The basic approach for this lab includes checking at the beginning if the lengths of the strings are different. If they are not different, then we proceed with the program. If they are different, return false, because an anagram cannot be made if they are not the same length. 
+
+First we create a hashmap or dictionary with a character key for the character of the word, and an integer 
+value for the count of both s and t.
+
+Then we populate the hashmap with all the letters from s, incrementing the integer value for every letter contained. 
+
+Then, for t, we subtract the integer value of each of the characters by 1.
+
+In the end, if any values are not equal to 0, we return false, otherwise return true.
+
