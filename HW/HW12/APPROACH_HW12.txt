@@ -1,0 +1,13 @@
+HW 12 Approach
+
+This approach essentially works by initializing an empty list visited to keep track of visited houses, and set total_cost to 0, since we will return this at the end of the method.
+
+Then we iterate until all the houses are visited. 
+
+For each iteration, we would iterate over the pipes to find the cheapest pipe that is connected to a node in visited (that connects a visited house to an unvisited one). We update the best_pipe_cost and best_pipe_house variables too.
+
+Then we also iterate over the wells to find the cheapest well that is not contained in visited. We update best_well_cost and best_well_house accordingly.
+
+Finally we would compare the costs of the best pipe and the best well. We would choose the lesser one (or best well if they are equal) and add the cost of it to total_cost and mark the house as visited. 
+
+This repeats until all the houses are visited, (meaning the size of visited is = n), then we will return the total_cost variable as the output. 
