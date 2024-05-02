@@ -1,0 +1,3 @@
+HW2 APPROACH
+
+I use binary search for this problem becuase the dataset is sorted. Essentially I start from the middle and keep splitting the set in half until I either find the "bad" value or find no bad value.

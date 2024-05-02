@@ -1,0 +1,39 @@
+MATRIX_MULTIPLY(A, B): 
+#O(1) to compare
+  if columns(A) ≠ rows(B): 
+    raise ValueError("Matrix multiplication is not defined.") 
+
+#O(1) to initialize variables at beginning ---------
+  rows_A ← number of rows in A 
+  cols_A ← number of columns in A 
+  cols_B ← number of columns in B 
+  result ← matrix of size rows_A x cols_B filled with zeros 
+
+
+# O(rows_A)
+  for i from 1 to rows_A do: 
+  # O(cols_B)
+    for j from 1 to cols_B do: 
+    sum ← 0 
+  # O(cols_A)
+      for k from 1 to cols_A do: 
+        sum ← sum + A[i][k] * B[k][j] 
+      result[i][j] ← sum return result
+
+
+
+
+
+
+A = rowsA * colsA
+B = colsA * colsB
+
+Time complexity: O(rowsA * colsB * colsA)
+
+
+Worst Case: Theta(colsA^3)
+Average Case: Theta(rowsA * colsB * colsA)
+Best Case: Theta(rowsA * colsA)
+
+
+
