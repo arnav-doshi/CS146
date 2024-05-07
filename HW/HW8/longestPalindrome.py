@@ -1,0 +1,2 @@
+def longestPalindrome(self, s):
+    

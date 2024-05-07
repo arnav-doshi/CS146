@@ -1,0 +1,9 @@
+LAB 8 APPROACH
+
+
+My basic approach to this lab is to use dynamic programming (memoization) in order to create an array to compute the minimum amount of coins to make up the amount
+
+I created a helper method 'recurse' which recursively searches the minimum number of coins to make up the given amount. It also keeps track of the min number of coins required for each amount using memoization. This smallest value is saved into the "smallest" variable.
+
+Finally, the smallest amount of coins possible is returned and checked in the first method. If the answer is possible, it returns the answer, otherwise it returns -1, according to the question's directions.
+
