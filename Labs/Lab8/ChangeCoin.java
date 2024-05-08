@@ -45,11 +45,11 @@ public class ChangeCoin {
 
     public static void main(String[] args) {
         ChangeCoin cc = new ChangeCoin();
-        int[] coins = {1, 2, 5};
+        int[] coins = {1, 10, 25, 50};
         int[] coins2 = {2};
         int[] coins3 = {1};
 
-        System.out.println(cc.coinChange(coins, 11));
+        System.out.println(cc.coinChange(coins, 40));
         System.out.println(cc.coinChange(coins2, 3));
         System.out.println(cc.coinChange(coins3, 0));
     }

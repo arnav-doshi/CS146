@@ -1,0 +1,7 @@
+[Extra Credit] Bonus Questions: "Third lightbulb's the charm" APPROACH
+
+
+
+In this solution, I implemented an O(n) time complexity solution to the fibonacci sequence using dynamic programming.
+
+I used a bottom-up approach that uses an array to store fib numbers and calcualtes each fibonacci number by adding the two previous indexes in the array. This repeats until the fibonacci number, n, and returns the final fibonacci number that is located at the array index n.
