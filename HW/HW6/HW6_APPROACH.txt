@@ -1,0 +1,12 @@
+HW 6 APPROACH
+
+
+To this problem, I decided to create a brute force approach. I first sort the array and create a HashSet in order to not store any duplicates.
+
+After, I create three loops with three variables, i, j, k, in order to iterate through the nums array.
+
+Then I just check if nums[i] + nums[j] + nums[k] is equal to 0, and if it is, then I add it into the HashSet.
+
+This continues until the three pointers iterate through the entirety of nums and I return the final list of all the values where nums[i] + nums[j] + nums[k] == 0.
+
+If the list is empty, I return an empty set. 
