@@ -1,0 +1,3 @@
+HW8 APPROACH
+
+My approach for this issue is to count the frequency of the characters in the string s by using a HashMap. Once all the frequencies of the characters are counted, I iterate through the counts of each character in the Hashmap. If the count is even, then the count is added to the output variable. If the count is odd, it adds the count minus one from the output. It also sets an odd boolean to be true. In the end it returns the final output length (and plus one if it the string contains an odd-counted character). 
