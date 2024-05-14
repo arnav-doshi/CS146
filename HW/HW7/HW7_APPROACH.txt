@@ -1,0 +1,9 @@
+HW7 APPROACH
+
+In this problem, I decided to use a hashmap in order to store the amount of overlap that each server has. 
+
+First, I check if the intervals list is empty, in order to catch an edge case.
+
+Then I initialize a hashmap and iterate through intervals. For every number that is included in intervals, I increment the hashmap's count by 1.
+
+Finally at the end, I find the maximum number in the hashmap and return it, since that is the amount of servers required.
