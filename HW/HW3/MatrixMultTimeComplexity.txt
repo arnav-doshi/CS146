@@ -35,7 +35,7 @@ Time complexity: O(rowsA * colsB * colsA)
 
 Worst Case: Theta(n^3)
 Average Case: Theta(n^3)
-Best Case: Theta(n^2)
+Best Case: O(1)
 
 
 
