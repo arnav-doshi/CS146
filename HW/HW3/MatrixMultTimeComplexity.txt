@@ -28,12 +28,14 @@ MATRIX_MULTIPLY(A, B):
 A = rowsA * colsA
 B = colsA * colsB
 
+Since there are 3 for loops, each iterating for a different n (rows_A, cols_B, cols_A), the number of operations vary depending on the cases. 
+
 Time complexity: O(rowsA * colsB * colsA)
 
 
-Worst Case: Theta(colsA^3)
-Average Case: Theta(rowsA * colsB * colsA)
-Best Case: Theta(rowsA * colsA)
+Worst Case: Theta(n^3)
+Average Case: Theta(n^3)
+Best Case: O(1)
 
 
 
